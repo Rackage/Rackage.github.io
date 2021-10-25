@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rackage.github.io" />
+    <meta property="og:title" content="Rackage - Roblox Package Manager" />
+    <meta
+      property="og:image"
+      content="https://rackage.github.io/assets/Rackage/Rackage Banner.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="350" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GetRackage" />
+    <meta name="twitter:creator" content="@GetRackage" />
+    <meta name="twitter:title" content="Rackage - Roblox Package Manager" />
+    <meta
+      name="twitter:image"
+      content="https://rackage.github.io/assets/Rackage/Rackage Banner.png"
+    />
+    <meta property="theme-color" content="#d174ff" />
+    <title>Rackage - Roblox Package Manager</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/Rackage/Rackage Gradient.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="r-nav-bar">
+        <a href="../" class="r-nav-content-item">Home</a>
+        <a href="" class="r-nav-content-item">Packages</a>
+        <object
+          data="../assets/Rackage/Rackage White.svg"
+          class="r-nav-content-item r-nav-title"
+        ></object>
+        <a href="../" class="r-nav-content-item">Install</a>
+        <a href="https://discord.gg/xC5mRrq5aj" class="r-nav-content-item"
+          >Support</a
+        >
+      </div>
+      <div class="r-nav-search">
+        <div class="r-nav-searchbar">
+          <form action="./" method="get">
+            <input
+              type="text"
+              name="q"
+              id="searchBar"
+              placeholder="Search for packages"
+              autocomplete="off"
+              minlength="1"
+              maxlength="80"
+              oninvalid="setCustomValidity(' ') "
+              onchange="try{setCustomValidity('')}catch(e){}"
+              value=""
+            />
+            <button type="submit" style="font-family: 'Poppins', sans-serif">
+              Search
+            </button>
+          </form>
+        </div>
+        <button class="r-nav-button">Login</button>
+        <button class="r-nav-button">Upload</button>
+      </div>
+
+      <div class="packages">
+        <div class="package-options">
+          <h1 id="package-filter-name">Popular Packages</h1>
+          <div class="package-option-buttons">
+            <button id="package-filter-btn">Popular <span class="bi-chevron-down"></span></button>
+            <button id="package-sort-btn">Downloads <span class="bi-chevron-down"></span></button>
+            <button id="package-type-btn">Modules <span class="bi-chevron-down"></span></button>
+          </div>
+        </div>
+
+        <div class="package-list">
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="" id="packageName">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+
+          <div class="package-card" id="package_50623891">
+            <h2>
+              <a href="">Package Name</a>
+              <span class="package-flair">Popular</span>
+              <span class="package-flair">Module</span>
+            </h2>
+            <p class="package-desc">Package Description</p>
+            <div class="package-tags">
+              <a href="" class="package-tag">admin</a>
+              <a href="" class="package-tag">utility</a>
+            </div>
+            <span class="package-data"
+              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
+              <p>v1.6.3</p>
+              <p>12 seconds ago</p></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-group">
+            <h2>Support</h2>
+            <a href="https://discord.gg/xC5mRrq5aj">Discord</a>
+            <a href="https://twitter.com/GetRackage">Twitter</a>
+            <a href="https://github.com/Rackage">GitHub</a>
+          </div>
+          <div class="footer-group">
+            <h2>Packages</h2>
+            <a href="">Popular Packages</a>
+            <a href="">New Packages</a>
+            <a href="">Top Packages</a>
+            <a href="">Featured Packages</a>
+          </div>
+          <div class="footer-group">
+            <h2>About</h2>
+            <a href="https://github.com/Rackage">GitHub</a>
+            <a href="">Developer Forum</a>
+            <a href="">Plugin</a>
+            <a href="">Pricing</a>
+          </div>
+          <div class="footer-group">
+            <h2>Terms</h2>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Package Guidelines</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-banner">
+        <p>
+          Made with ❤ by
+          <a href="https://starnamics.me" style="color: inherit">Starnamics</a>
+        </p>
+        <p>
+          Licensed under
+          <a
+            href="https://github.com/Rackage/Rackage.github.io/blob/main/LICENSE"
+            style="color: inherit"
+            >MIT License</a
+          >
+        </p>
+      </div>
+    </main>
+
+    <div class="mobile-alert">
+      <i class="bi-x-circle ma-icon"></i>
+      <h1>Please view this site on<br />a laptop or computer</h1>
+    </div>
+
+
+
+    <script>
+      let searchBar = document.getElementById("searchBar")
+      let packageFilterName = document.getElementById("package-filter-name")
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('q');
+      if (query !== null && query !== "") {
+      searchBar.setAttribute('value',query);
+      packageFilterName.innerHTML = `Packages related to ${query}`
+      }
+    </script>
+  </body>
+</html>

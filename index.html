@@ -55,7 +55,7 @@
       <div class="r-nav-bar">
         <a href="" class="r-nav-content-item">Home</a>
         <a href="" class="r-nav-content-item">Packages</a>
-        <a href="" class="r-nav-content-item r-nav-title">RACKAGE</a>
+        <object data="./assets/Rackage/Rackage White.svg" class="r-nav-content-item r-nav-title"></object>
         <a href="#" onclick="InstallRackage()" class="r-nav-content-item"
           >Install</a
         >
@@ -65,14 +65,14 @@
       </div>
       <div class="r-nav-search">
         <div class="r-nav-searchbar">
-          <form action="./search/" method="get">
+          <form action="./packages/" method="get">
             <input
               type="text"
               name="q"
               id="search"
               placeholder="Search for packages"
               autocomplete="off"
-              minlength="2"
+              minlength="1"
               maxlength="80"
               oninvalid="setCustomValidity(' ') "
               onchange="try{setCustomValidity('')}catch(e){}"
