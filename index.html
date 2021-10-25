@@ -7,6 +7,20 @@
     <title>Rackage - Roblox Package Manager</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <script>
+        function InstallAlert(v) {
+            let alertDiv = document.getElementById("install-alert");
+            if (v === true) {
+                alertDiv.classList.remove("ia-hide");
+            } else {
+               alertDiv.classList.add("ia-hide");
+            }
+        }
+        function InstallRackage() {
+            window.location.href='roblox-studio:1+launchmode:plugin+pluginid:752585459';
+            InstallAlert(true);
+        }
+    </script>
 </head>
 <body>
     <main>
@@ -42,19 +56,92 @@
         </p>
         <br><br><br>
         <div class="splash-buttons">
-            <button class="splash-button sb-fill" onclick="window.location.href='roblox-studio:1+launchmode:plugin+pluginid:752585459'">Install Rackage</button>
-            <button class="splash-button bi-github sb-no-fill"> View on Github</button>
+            <button class="splash-button sb-fill" onclick="InstallRackage()">Install Rackage</button>
+            <button class="splash-button bi-github sb-no-fill" onclick="window.open('https://github.com/Rackage')"> View on Github</button>
         </div>
     </div>
 
     <div class="plugin-preview">
-        <h1>Rackage</h1>
+        <div class="pp-content">
+        <div class="pp-image"></div>
+        <div class="pp-text">
+            <h1>Rackage<span class="pp-beta">Beta</span></h1>
+            <h2>Roblox Package Manager</h2>
+            <hr>
+            <p>Install a wide variety of modules, audio, plugins and other assets directly from the Rackage website or install Rackage packages directly in studio</p>
+            <b>Features:</b>
+            <ul>
+                <li>CLI-type Interface</li>
+                <li>Multiple Themes</li>
+                <li>Package Installer</li>
+                <li>Package Uploader</li>
+                <li>Github Intergration</li>
+            </ul>
+        </div></div>
     </div>
+    
+    
+    <div class="credits">
+        <h1>Powered By</h1>
+        <div class="credit-logos">
+            <a href="" id="cl-github"></a>
+            <a href="" id="cl-roblox"></a>
+            <a href="" id="cl-vercel"></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+        <div class="footer-group">
+            <h2>Support</h2>
+            <a href="">Discord</a>
+            <a href="">Twitter</a>
+            <a href="">GitHub</a>
+        </div>
+        <div class="footer-group">
+            <h2>Packages</h2>
+            <a href="">Popular Packages</a>
+            <a href="">New Packages</a>
+            <a href="">Top Packages</a>
+            <a href="">Featured Packages</a>
+        </div>
+        <div class="footer-group">
+            <h2>About</h2>
+            <a href="">GitHub</a>
+            <a href="">Developer Forum</a>
+            <a href="">Plugin</a>
+            <a href="">Pricing</a>
+        </div>
+        <div class="footer-group">
+            <h2>Terms</h2>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Package Guidelines</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="bottom-banner">
+        <p>Made with ❤ by <a href="https://starnamics.me" style="color: inherit">Starnamics</a></p>
+        <p>Licensed under <a href="" style="color: inherit">MIT License</a></p>
+    </div>
+
     </main>
+
+
+
 
     <div class="mobile-alert">
         <i class="bi-x-circle ma-icon"></i>
         <h1>Please view this site on<br>a laptop or computer</h1>
+    </div>
+
+    <div class="install-alert ia-hide" id="install-alert" onclick="InstallAlert(false)">
+        <p class="install-alert-text">
+        If you have Roblox Studio installed, Rackage will now be installed.<br><br>
+        You may see a prompt which asks you if you would like to open Roblox, press "Open Roblox" or else Rackage will not be installed.<br><br>
+        <span style="font-size: 16px; font-weight: 400;">Want to install manually? Click <a href="" style="color: white;">here</a></span>
+        </p>
     </div>
 </body>
 </html>
