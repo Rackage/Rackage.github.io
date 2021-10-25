@@ -161,12 +161,14 @@ button {
 
 .splash-title {
     font-size: 58px;
-    max-width: 800px;
+    max-width: 850px;
+    font-family: 'Poppins',sans-serif;
 }
 
 .splash-sub {
     font-size: 64px;
-    max-width: 800px;
+    max-width: 850px;
+    font-family: 'Poppins',sans-serif;
 }
 
 .splash-text {
