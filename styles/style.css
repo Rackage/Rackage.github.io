@@ -30,6 +30,7 @@ button {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    z-index: 2;
 }
 
 .r-nav-content-item {
@@ -62,6 +63,7 @@ button {
     justify-content: space-evenly;
     flex-direction: row;
     border-bottom: solid 1px rgb(210,210,210);
+    z-index: 2;
 }
 
 .r-nav-searchbar {
@@ -140,6 +142,70 @@ button {
 
 .ma-icon {
     font-size: 124px;
+}
+
+
+.splash {
+    height: calc(100vh - (65px + 85px));
+    width: 100%;
+    background-image: url("../assets/Backgrounds/Waves.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.splash-title {
+    font-size: 58px;
+    max-width: 800px;
+}
+
+.splash-sub {
+    font-size: 64px;
+    max-width: 800px;
+}
+
+.splash-text {
+    font-size: 20px;
+    max-width: 800px;
+}
+
+.splash-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.splash-button {
+    padding: 12px;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 215px;
+    background: none;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 64px;
+    transition: opacity 0.15s linear;
+}
+
+.splash-button:hover, .splash-button:focus {
+    opacity: 0.8;
+}
+
+.sb-fill {
+    background: rgb(255,116,116);
+    background: linear-gradient(45deg, rgba(255,116,116,1) 0%, rgba(255,166,110,1) 100%);
+}
+
+.sb-no-fill {
+    border: solid 2px white;
 }
 
 @media screen and (max-width: 720px) {
