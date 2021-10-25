@@ -405,34 +405,45 @@ button {
   margin-bottom: 12px;
 }
 
-#cl-github {
+.cl {
+  opacity: 0.85;
+  height: calc(98px / 3);
+  width: calc(240px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.15s linear;
+}
+
+.cl-github {
   background: url("../assets/Logos/GitHub_Logo.svg");
-  height: calc(98px / 3);
-  width: calc(240px);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.85;
 }
 
-#cl-roblox {
+.cl-roblox {
   background: url("../assets/Logos/Roblox_Logo.svg");
-  height: calc(98px / 3);
-  width: calc(240px);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.85;
 }
 
-#cl-vercel {
+.cl-vercel {
   background: url("../assets/Logos/Vercel_Logo.svg");
+}
+
+.cl {
+  opacity: 0.85;
   height: calc(98px / 3);
   width: calc(240px);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.85;
+  transition: opacity 0.15s linear;
+}
+
+.cl-roblox:hover,
+.cl-github:hover,
+.cl-vercel:hover,
+.cl-roblox:focus,
+.cl-github:focus,
+.cl-vercel:focus {
+  opacity: 1;
 }
 
 .footer {
