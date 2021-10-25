@@ -15,7 +15,7 @@ body {
   background: rgb(235, 235, 235);
   width: 100%;
   min-height: 100vh;
-  color: rgb(33,33,33);
+  color: rgb(33, 33, 33);
 }
 
 h1,
@@ -203,6 +203,12 @@ button {
   font-size: 58px;
   max-width: 850px;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splash-title object {
+  margin-right: 0;
 }
 
 .splash-sub {
@@ -382,59 +388,59 @@ button {
 }
 
 .credit-logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .credits h1 {
-    color: white;
-    font-size: 42px;
+  color: white;
+  font-size: 42px;
 }
 
 .credit-logos a {
-    margin-top: 12px;
-    margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #cl-github {
-    background: url("../assets/Logos/GitHub_Logo.svg");
-    height: calc(98px / 3);
-    width: calc(240px);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.85;
+  background: url("../assets/Logos/GitHub_Logo.svg");
+  height: calc(98px / 3);
+  width: calc(240px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
 }
 
 #cl-roblox {
-    background: url("../assets/Logos/Roblox_Logo.svg");
-    height: calc(98px / 3);
-    width: calc(240px);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.85;
+  background: url("../assets/Logos/Roblox_Logo.svg");
+  height: calc(98px / 3);
+  width: calc(240px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
 }
 
 #cl-vercel {
-    background: url("../assets/Logos/Vercel_Logo.svg");
-    height: calc(98px / 3);
-    width: calc(240px);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.85;
+  background: url("../assets/Logos/Vercel_Logo.svg");
+  height: calc(98px / 3);
+  width: calc(240px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-    padding: 56px;
-    border-bottom: solid 1px rgb(210, 210, 210);
-    font-family: 'Poppins',sans-serif;
+  padding: 56px;
+  border-bottom: solid 1px rgb(210, 210, 210);
+  font-family: "Poppins", sans-serif;
 }
 
 .footer-content {
@@ -458,9 +464,9 @@ button {
 }
 
 .footer h2 {
-    font-size: 18px;
-    text-align: left;
-    margin-bottom: 6px;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 6px;
 }
 
 .bottom-banner {
@@ -469,7 +475,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 

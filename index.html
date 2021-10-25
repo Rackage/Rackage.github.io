@@ -1,160 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://rackage.github.io"/>
-    <meta property="og:title" content="Rackage - Roblox Package Manager"/>
-    <meta property="og:image" content="https://rackage.github.io/assets/Rackage/Banner.png"/>
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="800">
-    <meta property="og:image:height" content="350"> 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@GetRackage">
-<meta name="twitter:creator" content="@GetRackage">
-<meta name="twitter:title" content="Rackage - Roblox Package Manager">
-<meta name="twitter:image" content="https://rackage.github.io/assets/Rackage/Banner.png">
-    <meta property="theme-color" content="#d174ff"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rackage.github.io" />
+    <meta property="og:title" content="Rackage - Roblox Package Manager" />
+    <meta
+      property="og:image"
+      content="https://rackage.github.io/assets/Rackage/Banner.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="350" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GetRackage" />
+    <meta name="twitter:creator" content="@GetRackage" />
+    <meta name="twitter:title" content="Rackage - Roblox Package Manager" />
+    <meta
+      name="twitter:image"
+      content="https://rackage.github.io/assets/Rackage/Banner.png"
+    />
+    <meta property="theme-color" content="#d174ff" />
     <title>Rackage - Roblox Package Manager</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/Rackage/Rackage Gradient.svg"
+      type="image/x-icon"
+    />
     <script>
-        function InstallAlert(v) {
-            let alertDiv = document.getElementById("install-alert");
-            if (v === true) {
-                alertDiv.classList.remove("ia-hide");
-            } else {
-               alertDiv.classList.add("ia-hide");
-            }
+      function InstallAlert(v) {
+        let alertDiv = document.getElementById("install-alert");
+        if (v === true) {
+          alertDiv.classList.remove("ia-hide");
+        } else {
+          alertDiv.classList.add("ia-hide");
         }
-        function InstallRackage() {
-            window.location.href='roblox-studio:1+launchmode:plugin+pluginid:752585459';
-            InstallAlert(true);
-        }
+      }
+      function InstallRackage() {
+        window.location.href =
+          "roblox-studio:1+launchmode:plugin+pluginid:752585459";
+        InstallAlert(true);
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-
-    <div class="r-nav-bar">
-            <a href="" class="r-nav-content-item">Home</a>
-            <a href="" class="r-nav-content-item">Packages</a>
-            <a href="" class="r-nav-content-item r-nav-title">RACKAGE</a>
-            <a href="" class="r-nav-content-item">Install</a>
-            <a href="" class="r-nav-content-item">Support</a>
-    </div>
-    <div class="r-nav-search">
+      <div class="r-nav-bar">
+        <a href="" class="r-nav-content-item">Home</a>
+        <a href="" class="r-nav-content-item">Packages</a>
+        <a href="" class="r-nav-content-item r-nav-title">RACKAGE</a>
+        <a href="#" onclick="InstallRackage()" class="r-nav-content-item"
+          >Install</a
+        >
+        <a href="https://discord.gg/xC5mRrq5aj" class="r-nav-content-item"
+          >Support</a
+        >
+      </div>
+      <div class="r-nav-search">
         <div class="r-nav-searchbar">
-            <form action="./search/" method="get">
-                <input type="text" name="q" id="search" placeholder="Search for packages" autocomplete="off" minlength="2" maxlength="80"
-                oninvalid="setCustomValidity(' ') "
-                onchange="try{setCustomValidity('')}catch(e){}">
-                <button type="submit" style="font-family: 'Poppins',sans-serif;">Search</button>
-            </form>
+          <form action="./search/" method="get">
+            <input
+              type="text"
+              name="q"
+              id="search"
+              placeholder="Search for packages"
+              autocomplete="off"
+              minlength="2"
+              maxlength="80"
+              oninvalid="setCustomValidity(' ') "
+              onchange="try{setCustomValidity('')}catch(e){}"
+            />
+            <button type="submit" style="font-family: 'Poppins', sans-serif">
+              Search
+            </button>
+          </form>
         </div>
         <button class="r-nav-button">Login</button>
-    </div>
+        <button class="r-nav-button">Upload</button>
+      </div>
 
-    <div class="splash">
-        <h1 class="splash-title">
-            RACKAGE
-        </h1>
-        <h2 class="splash-sub">
-            Roblox Package Manager
-        </h2><br><br>
+      <div class="splash">
+        <h1 class="splash-title"><object data="./assets/Rackage/Rackage White.svg" style="height: 58px;"></object>ACKAGE</h1>
+        <h2 class="splash-sub">Roblox Package Manager</h2>
+        <br /><br />
         <p class="splash-text">
-            Rackage is a brand new package manager for Roblox. It allows you to install uploaded packages inside studio using our plugin without the need for an external program (although we do plan on this in the future).<br><br>You can also install packages directly from our website and you'll be prompted to add them to whichever game you are currently editing in studio.<br><br>Rackage is entirely open-source, so you can edit it to your liking!
+          Rackage is a brand new package manager for Roblox. It allows you to
+          install uploaded packages inside studio using our plugin without the
+          need for an external program (although we do plan on this in the
+          future).<br /><br />You can also install packages directly from our
+          website and you'll be prompted to add them to whichever game you are
+          currently editing in studio.<br /><br />Rackage is entirely
+          open-source, so you can edit it to your liking!
         </p>
-        <br><br><br>
+        <br /><br /><br />
         <div class="splash-buttons">
-            <button class="splash-button sb-fill" onclick="InstallRackage()">Install Rackage</button>
-            <button class="splash-button bi-github sb-no-fill" onclick="window.open('https://github.com/Rackage')"> View on Github</button>
+          <button class="splash-button sb-fill" onclick="InstallRackage()">
+            Install Rackage
+          </button>
+          <button
+            class="splash-button bi-github sb-no-fill"
+            onclick="window.open('https://github.com/Rackage')"
+          >
+            View on Github
+          </button>
         </div>
-    </div>
+      </div>
 
-    <div class="plugin-preview">
+      <div class="plugin-preview">
         <div class="pp-content">
-        <div class="pp-image"></div>
-        <div class="pp-text">
+          <div class="pp-image"></div>
+          <div class="pp-text">
             <h1>Rackage<span class="pp-beta">Beta</span></h1>
             <h2>Roblox Package Manager</h2>
-            <hr>
-            <p>Install a wide variety of modules, audio, plugins and other assets directly from the Rackage website or install Rackage packages directly in studio</p>
+            <hr />
+            <p>
+              Install a wide variety of modules, audio, plugins and other assets
+              directly from the Rackage website or install Rackage packages
+              directly in studio
+            </p>
             <b>Features:</b>
             <ul>
-                <li>CLI-type Interface</li>
-                <li>Multiple Themes</li>
-                <li>Package Installer</li>
-                <li>Package Uploader</li>
-                <li>Github Intergration</li>
+              <li>CLI-type Interface</li>
+              <li>Multiple Themes</li>
+              <li>Package Installer</li>
+              <li>Package Uploader</li>
+              <li>Github Intergration</li>
             </ul>
-        </div></div>
-    </div>
-    
-    
-    <div class="credits">
+          </div>
+        </div>
+      </div>
+
+      <div class="credits">
         <h1>Powered By</h1>
         <div class="credit-logos">
-            <a href="" id="cl-github"></a>
-            <a href="" id="cl-roblox"></a>
-            <a href="" id="cl-vercel"></a>
+          <a href="https://github.com/" id="cl-github"></a>
+          <a href="https://roblox.com/" id="cl-roblox"></a>
+          <a href="https://vercel.com" id="cl-vercel"></a>
         </div>
-    </div>
+      </div>
 
-    <div class="footer">
+      <div class="footer">
         <div class="footer-content">
-        <div class="footer-group">
+          <div class="footer-group">
             <h2>Support</h2>
-            <a href="">Discord</a>
-            <a href="">Twitter</a>
-            <a href="">GitHub</a>
-        </div>
-        <div class="footer-group">
+            <a href="https://discord.gg/xC5mRrq5aj">Discord</a>
+            <a href="https://twitter.com/GetRackage">Twitter</a>
+            <a href="https://github.com/Rackage">GitHub</a>
+          </div>
+          <div class="footer-group">
             <h2>Packages</h2>
             <a href="">Popular Packages</a>
             <a href="">New Packages</a>
             <a href="">Top Packages</a>
             <a href="">Featured Packages</a>
-        </div>
-        <div class="footer-group">
+          </div>
+          <div class="footer-group">
             <h2>About</h2>
-            <a href="">GitHub</a>
+            <a href="https://github.com/Rackage">GitHub</a>
             <a href="">Developer Forum</a>
             <a href="">Plugin</a>
             <a href="">Pricing</a>
-        </div>
-        <div class="footer-group">
+          </div>
+          <div class="footer-group">
             <h2>Terms</h2>
             <a href="">Terms of Use</a>
             <a href="">Privacy Policy</a>
             <a href="">Package Guidelines</a>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-    <div class="bottom-banner">
-        <p>Made with ❤ by <a href="https://starnamics.me" style="color: inherit">Starnamics</a></p>
-        <p>Licensed under <a href="" style="color: inherit">MIT License</a></p>
-    </div>
-
+      <div class="bottom-banner">
+        <p>
+          Made with ❤ by
+          <a href="https://starnamics.me" style="color: inherit">Starnamics</a>
+        </p>
+        <p>
+          Licensed under
+          <a
+            href="https://github.com/Rackage/Rackage.github.io/blob/main/LICENSE"
+            style="color: inherit"
+            >MIT License</a
+          >
+        </p>
+      </div>
     </main>
 
-
-
-
     <div class="mobile-alert">
-        <i class="bi-x-circle ma-icon"></i>
-        <h1>Please view this site on<br>a laptop or computer</h1>
+      <i class="bi-x-circle ma-icon"></i>
+      <h1>Please view this site on<br />a laptop or computer</h1>
     </div>
 
-    <div class="install-alert ia-hide" id="install-alert" onclick="InstallAlert(false)">
-        <p class="install-alert-text">
-        If you have Roblox Studio installed, Rackage will now be installed.<br><br>
-        You may see a prompt which asks you if you would like to open Roblox, press "Open Roblox" or else Rackage will not be installed.<br><br>
-        <span style="font-size: 16px; font-weight: 400;">Want to install manually? Click <a href="" style="color: white;">here</a></span>
-        </p>
+    <div
+      class="install-alert ia-hide"
+      id="install-alert"
+      onclick="InstallAlert(false)"
+    >
+      <p class="install-alert-text">
+        If you have Roblox Studio installed, Rackage will now be installed.<br /><br />
+        You may see a prompt which asks you if you would like to open Roblox,
+        press "Open Roblox" or else Rackage will not be installed.<br /><br />
+        <span style="font-size: 16px; font-weight: 400"
+          >Want to install manually? Click
+          <a href="" style="color: white">here</a></span
+        >
+      </p>
     </div>
-</body>
+  </body>
 </html>
