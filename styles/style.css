@@ -33,12 +33,8 @@ button {
 
 .r-nav-bar {
   width: 100%;
-  background: rgb(209, 116, 255);
-  background: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   padding: 16px;
   padding-left: 30%;
   padding-right: 30%;
@@ -107,12 +103,8 @@ button {
 .r-nav-searchbar button {
   width: 12.5%;
   outline: none;
-  background: rgb(209, 116, 255);
-  background: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   border: none;
   color: white;
   font-size: 16px;
@@ -129,29 +121,17 @@ button {
 .r-nav-searchbar input:focus {
   padding: 11px;
   border: solid 1px;
-  border-image: linear-gradient(
-      45deg,
-      rgba(209, 116, 255, 1) 0%,
-      rgba(255, 129, 87, 1) 100%
-    )
-    1;
+  border-image: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%) 1;
 }
 
 .r-nav-button {
   width: 10%;
   background: none;
   border: solid 2px;
-  border-image: linear-gradient(
-      45deg,
-      rgba(209, 116, 255, 1) 0%,
-      rgba(255, 129, 87, 1) 100%
-    )
+  border-image: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%)
     1;
-  background: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -174,11 +154,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 18px;
@@ -191,7 +168,7 @@ button {
 .splash {
   height: calc(100vh - (76px + 85px));
   width: 100%;
-  background-image: url("../assets/Backgrounds/Waves.svg");
+  background-image: url("../assets/Backgrounds/Waves 5.svg");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,12 +229,8 @@ button {
 }
 
 .sb-fill {
-  background: rgb(255, 116, 116);
-  background: linear-gradient(
-    45deg,
-    rgba(255, 116, 116, 1) 0%,
-    rgba(255, 166, 110, 1) 100%
-  );
+  background: white;
+  color: black;
 }
 
 .sb-no-fill {
@@ -312,11 +285,8 @@ button {
 }
 
 .pp-image {
-  background-image: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   background-size: cover;
   width: 400px;
   background-position: center;
@@ -340,11 +310,8 @@ button {
 }
 
 .pp-text h1 {
-  background: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -376,11 +343,8 @@ button {
 
 .credits {
   display: flex;
-  background-image: linear-gradient(
-    45deg,
-    rgba(209, 116, 255, 1) 0%,
-    rgba(255, 129, 87, 1) 100%
-  );
+  background: rgb(218,114,230);
+background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 100%);
   justify-content: center;
   align-items: center;
   text-align: center;
