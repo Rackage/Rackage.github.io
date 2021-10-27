@@ -177,6 +177,8 @@ background: linear-gradient(45deg, rgba(218,114,230,1) 0%, rgba(255,166,87,1) 10
   background-size: cover;
   color: white;
   text-align: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .splash-title {

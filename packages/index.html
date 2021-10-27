@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rackage.github.io" />
-    <meta property="og:title" content="Rackage - Roblox Package Manager" />
     <meta
       property="og:image"
       content="https://rackage.github.io/assets/Rackage/Rackage Banner.png"
@@ -17,7 +15,6 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@GetRackage" />
     <meta name="twitter:creator" content="@GetRackage" />
-    <meta name="twitter:title" content="Rackage - Roblox Package Manager" />
     <meta
       name="twitter:image"
       content="https://rackage.github.io/assets/Rackage/Rackage Banner.png"
@@ -40,21 +37,34 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       let PackageId = urlParams.get("id");
+      var link = document.createElement("meta");
+      link.setAttribute("property", "og:url");
+      link.content = document.location;
 
       if (PackageId !== null && PackageId !== "") {
-        document
-          .querySelector('meta[property="og:title"]')
-          .setAttribute("content", "Admin System - Rackage");
-          document
-          .querySelector('meta[name="twitter:title"]')
-          .setAttribute("content", "Admin System - Rackage");
-           document
-          .querySelector('meta[property="og:url"]')
-          .setAttribute("content", window.location);
-          document.title = "Admin System - Rackage"
+        document.getElementsByTagName("head")[0].appendChild(link);
+        var link = document.createElement("meta");
+        link.setAttribute("property", "og:title");
+        link.content = "Admin System - Rackage";
+        document.getElementsByTagName("head")[0].appendChild(link);
+        var link = document.createElement("meta");
+        link.setAttribute("name", "twitter:title");
+        link.content = "Admin System - Rackage";
+        document.getElementsByTagName("head")[0].appendChild(link);
+
+        document.title = "Admin System - Rackage";
+      } else {
+        document.getElementsByTagName("head")[0].appendChild(link);
+        var link = document.createElement("meta");
+        link.setAttribute("property", "og:title");
+        link.content = "Rackage - Roblox Package Manager";
+        document.getElementsByTagName("head")[0].appendChild(link);
+        var link = document.createElement("meta");
+        link.setAttribute("name", "twitter:title");
+        link.content = "Rackage - Roblox Package Manager";
+        document.getElementsByTagName("head")[0].appendChild(link);
       }
     </script>
-
   </head>
   <body>
     <main>
