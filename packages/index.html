@@ -4,42 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Rackage - Roblox Package Manager</title>
-
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      let PackageId = urlParams.get("id");
-      var link = document.createElement("meta");
-      link.setAttribute("property", "og:url");
-      link.content = document.location;
-
-      if (PackageId !== null && PackageId !== "") {
-        document.getElementsByTagName("head")[0].appendChild(link);
-        var link = document.createElement("meta");
-        link.setAttribute("property", "og:title");
-        link.content = "Admin System - Rackage";
-        document.getElementsByTagName("head")[0].appendChild(link);
-        var link = document.createElement("meta");
-        link.setAttribute("name", "twitter:title");
-        link.content = "Admin System - Rackage";
-        document.getElementsByTagName("head")[0].appendChild(link);
-
-        document.title = "Admin System - Rackage";
-      } else {
-        document.getElementsByTagName("head")[0].appendChild(link);
-        var link = document.createElement("meta");
-        link.setAttribute("property", "og:title");
-        link.content = "Rackage - Roblox Package Manager";
-        document.getElementsByTagName("head")[0].appendChild(link);
-        var link = document.createElement("meta");
-        link.setAttribute("name", "twitter:title");
-        link.content = "Rackage - Roblox Package Manager";
-        document.getElementsByTagName("head")[0].appendChild(link);
-      }
-    </script>
-
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rackage.github.io" />
+    <meta property="og:title" content="Rackage - Roblox Package Manager" />
     <meta
       property="og:image"
       content="https://rackage.github.io/assets/Rackage/Rackage Banner.png"
@@ -50,11 +17,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@GetRackage" />
     <meta name="twitter:creator" content="@GetRackage" />
+    <meta name="twitter:title" content="Rackage - Roblox Package Manager" />
     <meta
       name="twitter:image"
       content="https://rackage.github.io/assets/Rackage/Rackage Banner.png"
     />
     <meta property="theme-color" content="#d174ff" />
+
+    <title>Rackage - Roblox Package Manager</title>
 
     <link rel="stylesheet" href="../styles/style.css" />
     <link
@@ -66,6 +36,15 @@
       href="../assets/Rackage/Rackage Gradient.svg"
       type="image/x-icon"
     />
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      let PackageId = urlParams.get("id");
+
+      if (PackageId !== null && PackageId !== "") {
+        document.title = `${PackageId} - Rackage`
+      }
+    </script>
   </head>
   <body>
     <main>
@@ -105,7 +84,7 @@
         <button class="r-nav-button">Upload</button>
       </div>
 
-      <div class="packages">
+      <div class="packages" id="packages">
         <div class="package-options">
           <h1 id="package-filter-name">Popular Packages</h1>
           <div class="package-option-buttons">
@@ -124,11 +103,12 @@
         <div class="package-list">
           <div class="package-card" id="package_50623891">
             <h2>
-              <a href="" id="packageName">Package Name</a>
-              <span class="package-flair">Popular</span>
+              <a href="" id="packageName">Admin System</a>
+              <span class="package-flair" style="background-color: rgb(86,140,240);">Popular</span>
               <span class="package-flair">Module</span>
+              <span class="package-flair" style="background-color: rgb(230,190,60);">12,503 Downloads</span>
             </h2>
-            <p class="package-desc">Package Description</p>
+            <p class="package-desc">Advanced Admin System to improve your games!</p>
             <div class="package-tags">
               <a href="" class="package-tag">admin</a>
               <a href="" class="package-tag">utility</a>
@@ -140,114 +120,13 @@
             >
           </div>
 
-          <div class="package-card" id="package_50623891">
-            <h2>
-              <a href="">Package Name</a>
-              <span class="package-flair">Popular</span>
-              <span class="package-flair">Module</span>
-            </h2>
-            <p class="package-desc">Package Description</p>
-            <div class="package-tags">
-              <a href="" class="package-tag">admin</a>
-              <a href="" class="package-tag">utility</a>
-            </div>
-            <span class="package-data"
-              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
-              <p>v1.6.3</p>
-              <p>12 seconds ago</p></span
-            >
-          </div>
-
-          <div class="package-card" id="package_50623891">
-            <h2>
-              <a href="">Package Name</a>
-              <span class="package-flair">Popular</span>
-              <span class="package-flair">Module</span>
-            </h2>
-            <p class="package-desc">Package Description</p>
-            <div class="package-tags">
-              <a href="" class="package-tag">admin</a>
-              <a href="" class="package-tag">utility</a>
-            </div>
-            <span class="package-data"
-              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
-              <p>v1.6.3</p>
-              <p>12 seconds ago</p></span
-            >
-          </div>
-
-          <div class="package-card" id="package_50623891">
-            <h2>
-              <a href="">Package Name</a>
-              <span class="package-flair">Popular</span>
-              <span class="package-flair">Module</span>
-            </h2>
-            <p class="package-desc">Package Description</p>
-            <div class="package-tags">
-              <a href="" class="package-tag">admin</a>
-              <a href="" class="package-tag">utility</a>
-            </div>
-            <span class="package-data"
-              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
-              <p>v1.6.3</p>
-              <p>12 seconds ago</p></span
-            >
-          </div>
-
-          <div class="package-card" id="package_50623891">
-            <h2>
-              <a href="">Package Name</a>
-              <span class="package-flair">Popular</span>
-              <span class="package-flair">Module</span>
-            </h2>
-            <p class="package-desc">Package Description</p>
-            <div class="package-tags">
-              <a href="" class="package-tag">admin</a>
-              <a href="" class="package-tag">utility</a>
-            </div>
-            <span class="package-data"
-              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
-              <p>v1.6.3</p>
-              <p>12 seconds ago</p></span
-            >
-          </div>
-
-          <div class="package-card" id="package_50623891">
-            <h2>
-              <a href="">Package Name</a>
-              <span class="package-flair">Popular</span>
-              <span class="package-flair">Module</span>
-            </h2>
-            <p class="package-desc">Package Description</p>
-            <div class="package-tags">
-              <a href="" class="package-tag">admin</a>
-              <a href="" class="package-tag">utility</a>
-            </div>
-            <span class="package-data"
-              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
-              <p>v1.6.3</p>
-              <p>12 seconds ago</p></span
-            >
-          </div>
-
-          <div class="package-card" id="package_50623891">
-            <h2>
-              <a href="">Package Name</a>
-              <span class="package-flair">Popular</span>
-              <span class="package-flair">Module</span>
-            </h2>
-            <p class="package-desc">Package Description</p>
-            <div class="package-tags">
-              <a href="" class="package-tag">admin</a>
-              <a href="" class="package-tag">utility</a>
-            </div>
-            <span class="package-data"
-              ><p style="font-weight: 600"><a href="">Starnamics</a></p>
-              <p>v1.6.3</p>
-              <p>12 seconds ago</p></span
-            >
           </div>
         </div>
+      </div>
+
+
+      <div class="pkg" id="pkg">
+        <h1>hi</h1>
       </div>
 
       <div class="footer">
@@ -306,14 +185,36 @@
       <h1>Please view this site on<br />a laptop or computer</h1>
     </div>
 
+
+    <script>
+     let tags = document.getElementsByClassName("package-tag");
+     for (const tag of tags) {
+       tag.setAttribute("href",`?q=${tag.innerHTML}`);
+     }
+    </script>
     <script>
       let searchBar = document.getElementById("searchBar");
       let packageFilterName = document.getElementById("package-filter-name");
+      let pkg = document.getElementById("pkg")
+      let packages = document.getElementById("packages")
+      pkg.setAttribute("style","display: none; visibility: hidden;");
+
       const query = urlParams.get("q");
+      const packageId = urlParams.get("id");
       if (query !== null && query !== "") {
         searchBar.setAttribute("value", query);
         packageFilterName.innerHTML = `Packages related to ${query}`;
       }
+
+      if (packageId !== null && packageId !== "") {
+        packages.setAttribute("style","display: none; visibility: hidden;");
+        pkg.setAttribute("style","display: flex; visibility: visible;")
+      }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.body.innerHTML =
+      marked(document.getElementById("pkg-description").innerHTML);
+  </script>
   </body>
 </html>
